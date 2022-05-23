@@ -1,5 +1,5 @@
 (function() {
-    const filePath = './coreui-angular-2.11.2.zip';
+    const filePath = './Dhruv Kant.pdf';
     const fileSizeEle = document.getElementById("file_size");
     const labelEle = document.getElementById("label");
 
