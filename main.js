@@ -29,7 +29,14 @@
     getFileSize(filePath, getFileSizeCallback);
 
     this.downloadFile = function() {
-        downloadViaIframe();
+        downloadViaLink();
+    }
+
+    function downloadViaLink() {
+        const link=document.createElement('a');
+        link.href = filePath;
+        link.download = filePath.substr(filePath.lastIndexOf('/') + 1);
+        link.click();
     }
 
     function downloadViaIframe() {
